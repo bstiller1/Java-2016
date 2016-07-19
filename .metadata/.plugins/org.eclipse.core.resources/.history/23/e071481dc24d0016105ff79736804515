@@ -1,0 +1,15 @@
+
+public class RandomArray {
+
+	public static void main(String[] args) {
+		int[] myList = new int[7];
+
+		for (int i = 1; i < myList.length; i++) {
+			  myList[i] = (int) (Math.random() * 64);
+			  System.out.print(myList[i] + " ");
+			}
+
+
+	}
+
+}
