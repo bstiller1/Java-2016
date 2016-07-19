@@ -16,7 +16,7 @@ public class MaxTest {
 				+ ", " + num3 + " is " + maxNum);
 		
 		System.out.println("The max between " + num1 + ", " + num2 
-				+ " is " + maxNum2);
+				+ " is " + maxNum);
 
 	}
 
