@@ -1,0 +1,17 @@
+
+public class TestClass {
+
+	public static void main(String[] args) {
+		// LinearSearch ls = new LinearSearch();
+		// Create array to search
+		double myList[] = {1.1,5.2,7.3,2.4,4.5,1.6,8.7}; 
+		// Use linearSearch from Class LinearSearch
+		// store result in int variable searchResult
+		double[] searchResult = SelectionSort.selectionSort(myList);
+
+		// Display the result
+		for(double sortedList : myList){
+			System.out.println(sortedList);
+		}
+	}
+}

@@ -4,15 +4,14 @@ public class TestClass {
 
 	public static void main(String[] args) {
 		double[] numbers = {6.0, 4.4, 1.9, 2.9, 3.4, 3.5};
-		Arrays.sort(numbers);
-		
-		for(double sortNum : numbers){
+		double[] numSort = Arrays.sort(numbers);
+		for(double sortNum : numSort){
 		System.out.println(sortNum);
 		}
 		
 		char[] chars = {'a', 'A', '4', 'F', 'D', 'P'};
-		Arrays.sort(chars);
-		for(char sortChar : chars){
+		char[] charSort = Arrays.sort(chars);
+		for(char sortChar : charSort){
 			System.out.println(sortChar);
 			}
 	}

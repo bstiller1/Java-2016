@@ -5,7 +5,9 @@ public class TestClass {
 	public static void main(String[] args) {
 		double[] numbers = {6.0, 4.4, 1.9, 2.9, 3.4, 3.5};
 		Arrays.sort(numbers);
-		
+		numbers.toString();
+		System.out.println(numbers);
+		System.exit(0);
 		for(double sortNum : numbers){
 		System.out.println(sortNum);
 		}
