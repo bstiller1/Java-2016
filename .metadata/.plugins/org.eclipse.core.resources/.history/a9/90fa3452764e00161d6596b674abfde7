@@ -1,7 +1,7 @@
 
 public class reverseArray {
 	
-	public static void main(String[] args){
+	public static void main(){
 		int[] list1 = {1, 2, 3, 4, 5, 6};
 		int[] list2 = reverse(list1);
 		// Enhanced "for loop" or foreach loop
