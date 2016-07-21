@@ -4,9 +4,6 @@ public class Pitfall {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		
-		LinearSearch ls = new LinearSearch();
-		
 		System.out.println("Enter a radius: ");
 		double radius = input.nextDouble();
 		double area;
