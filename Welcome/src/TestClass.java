@@ -1,19 +1,18 @@
-import java.util.Arrays;
 
 public class TestClass {
 
 	public static void main(String[] args) {
-		double[] numbers = {6.0, 4.4, 1.9, 2.9, 3.4, 3.5};
-		Arrays.sort(numbers);
+		String s = "Java Java Java".replaceAll("v\\w", "wi") ;
+		String s1 = "Java Java Java".replaceFirst("v\\w", "wi") ;
+		String[] s2 = "Java1HTML2Perl".split("\\d");
+
+		System.out.println(s);
+		System.out.println(s1);
 		
-		for(double sortNum : numbers){
-		System.out.println(sortNum);
+		for(String out : s2){
+		System.out.print(out + " ");
 		}
-		
-		char[] chars = {'a', 'A', '4', 'F', 'D', 'P'};
-		Arrays.sort(chars);
-		for(char sortChar : chars){
-			System.out.println(sortChar);
-			}
-	}
+
+
+}
 }

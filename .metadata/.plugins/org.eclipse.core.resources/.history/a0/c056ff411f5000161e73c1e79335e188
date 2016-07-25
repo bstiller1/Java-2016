@@ -1,0 +1,12 @@
+
+public class TestClass {
+
+	public static void main(String[] args) {
+		"Java".matches("Java");
+		"Java".equals("Java");
+		"Java is fun".matches("Java.*");
+		"Java is cool".matches("Java.*");
+
+
+}
+}
