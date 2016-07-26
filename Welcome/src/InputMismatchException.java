@@ -1,8 +1,13 @@
-import java.util.Scanner;
+import java.util.*;
 
-public class QuotientWithException {
-	public static int quotient(int num1, int num2){
+public class InputMismatchException extends Throwable {
+	public static int quotient(int num1, int num2)
+	throws CustomException{
+		if(num2 == 0){
 		return num1 / num2;
+		}else{
+			throw new CustomException(newRadius);
+		}
 	}
 	
 	public static void main(String[] args) {
@@ -13,17 +18,18 @@ public class QuotientWithException {
 		int num2 = input.nextInt();
 		
 		// Close the Scanner
-		input.close();
+	
 
 		try{
-		int result = quotient(num1, num2);
+		double result = quotient(num1, num2);
 		System.out.println(num1 + " / " + num2 + " is "
 				+ result);	
 		}
+
 		catch (ArithmeticException ex){
 			System.out.println("Exception: an integer " 
-		+ "cannot be divided by zero " + ex);
+		+ "cannot be divided by zero ");
 		}
-		System.out.println("Execution continues...");
+			input.close();
 	}
 }
