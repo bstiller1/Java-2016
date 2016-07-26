@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
-public class QuotientWithMethod {
+public class QuotientWithException {
+	public static int quotient(int num1, int num2){
+		return num1 / num2;
+	}
 	
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
@@ -12,17 +15,15 @@ public class QuotientWithMethod {
 		// Close the Scanner
 		input.close();
 
+		try{
 		int result = quotient(num1, num2);
 		System.out.println(num1 + " / " + num2 + " is "
-				+ result);
-		
-	}
-	public static int quotient(int num1, int num2){
-		if(num2 == 0){
-			System.out.println("Second Integer cannot be 0");
-			System.exit(1);
+				+ result);	
 		}
-		return num1 / num2;
+		catch (ArithmeticException ex){
+			System.out.println("Exception: an integer " 
+		+ "cannot be divided by zero ");
+		}
+		System.out.println("Execution continues...");
 	}
-	
 }
