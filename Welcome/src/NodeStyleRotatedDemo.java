@@ -2,12 +2,14 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-public class NodeStyleRotatedDemo {
+public class NodeStyleRotatedDemo extends Application {
 public void start(Stage primaryStage){
 	StackPane pane = new StackPane();
 	Button btOK = new Button("OK");
+
 	btOK.setStyle("-fx-border-color: blue;");
 	pane.getChildren().add(btOK);
 	
@@ -20,6 +22,7 @@ public void start(Stage primaryStage){
 	primaryStage.setTitle("NodeStyleRotateDemo");
 	primaryStage.setScene(scene);
 	primaryStage.show();
+	
 }
 	public static void main(String[] args) {
 	launch(args);

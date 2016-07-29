@@ -9,8 +9,8 @@ public class ShowCircle extends Application{
 public void start(Stage primaryStage){
 	Pane pane = new Pane();
 	Circle circle = new Circle();
-	circle.centerXProperty().bind(pane.widthProperty().divide(2));
-	circle.centerYProperty().bind(pane.heightProperty().divide(2));
+	//circle.centerXProperty().bind(pane.widthProperty().divide(2));
+	//circle.centerYProperty().bind(pane.heightProperty().divide(2));
 	circle.setRadius(50);
 	circle.setStroke(Color.BLACK);
 	circle.setFill(Color.WHITE);
